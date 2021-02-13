@@ -102,5 +102,16 @@
  </div>
 </div>
 <!-- End 2nd Product Slider -->
+<!-- Slider 3 starts -->
+<div class="mx-3">
+ <h2 align="center">Trending Mobiles Deals</h2>
+ <!-- Slider 3 -->
+ <div class="owl-carousel" id="slider2">
+    {% for m in  mobile %}
+  <a href="{% url 'product-detail' %}" class="btn"><div class="item"><img src="{{m.product_image.url}}" alt="" height="200px"><span class="fw-bold">{{m.title}}</span><br><span class="fs-5">{{m.discounted_price}}</span></div></a>
+  {% endfor %}
+ </div>
+</div>
+<!-- End 3nd Product Slider -->
 {% endblock main-content %}
 
