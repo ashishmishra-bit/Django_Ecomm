@@ -41,7 +41,9 @@ def change_password(request):
  return render(request, 'app/changepassword.html')
 
 def mobile(request):
- return render(request, 'app/mobile.html')
+    if data == None:
+        mobiles = Product.objects.filter(category='M')
+ return render(request, 'app/mobile.html', {'mobiles': mobiles})
 
 def login(request):
  return render(request, 'app/login.html')
