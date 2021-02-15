@@ -43,9 +43,9 @@ def change_password(request):
 def mobile(request , data=None):
     if data == None:
         mobiles = Product.objects.filter(category='M')
-    elif data == 'Xiomi' or data == 'Samsung' or data == 'Oppo' or data == 'Apple':
+    elif data == 'Xiomi' or data == 'Samsung':
         mobiles = Product.objects.filter(category='M').filter(brand=data)
- return render(request, 'app/mobile.html', {'mobiles': mobiles})
+        return render(request, 'app/mobile.html', {'mobiles': mobiles})
 
 def login(request):
  return render(request, 'app/login.html')
