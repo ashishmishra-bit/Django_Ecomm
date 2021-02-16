@@ -8,19 +8,17 @@
    <div class="list-group">
     <a href="{% url'mobile' %}" class="list-group-item
     list-group-item-action" aria-current="true">All Mobiles</a>
-     <a href="{% url'mobiledata' 'Xiaomi' 'Poco' %}" class="list-group-item
-    list-group-item-action" aria-current="true">Redmi</a>
+     <a href="{% url'mobiledata' 'Xiomi' 'Poco' %}" class="list-group-item
+    list-group-item-action">Redmi</a>
      <a href="{% url'mobiledata' 'Samsung' %}" class="list-group-item
-    list-group-item-action" aria-current="true">Samsung</a>
+    list-group-item-action">Samsung</a>
      <a href="{% url'mobiledata' 'Apple' %}" class="list-group-item
-    list-group-item-action" aria-current="true">Apple</a>
+    list-group-item-action">Apple</a>
      <a href="{% url'mobiledata' 'Oppo' %}" class="list-group-item
-    list-group-item-action" aria-current="true">Oppo</a>
-     {% comment %} <a href="{% url'mobiledata' 'Xiaomi' %}" class="list-group-item
-    list-group-item-action" aria-current="true">Poco</a>     {% endcomment %}
+    list-group-item-action">Oppo</a>   
    </div>
-  </div>
-  <div class="col-sm-8 offset-sm-1">
+  </div>  
+  <div class="col-sm-8">
   <div class="row">
   {% for product in mobiles %}
   <div class="col-sm-4 text-center mb-4">
@@ -36,7 +34,7 @@
   </div>
   {% endfor %}
  </div>
-</div>
-</div>
+ </div>
+ </div>
 </div>
 {% endblock main-content %}
