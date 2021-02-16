@@ -6,15 +6,17 @@
  <div class="row">
   <div class="col-sm-3">
    <div class="list-group">
-    <a href="{% url'mobile' %}" class="list-group-item
+    <a href="{% url 'mobile' %}" class="list-group-item
     list-group-item-action" aria-current="true">All Mobiles</a>
-     <a href="{% url'mobiledata' 'Xiomi' 'Poco' %}" class="list-group-item
+     <a href="{% url 'mobiledata' 'Xiomi' %}" class="list-group-item
     list-group-item-action">Redmi</a>
-     <a href="{% url'mobiledata' 'Samsung' %}" class="list-group-item
+    <a href="{% url 'mobiledata' 'Poco' %}" class="list-group-item
+    list-group-item-action">Poco</a>
+     <a href="{% url 'mobiledata' 'Samsung' %}" class="list-group-item
     list-group-item-action">Samsung</a>
-     <a href="{% url'mobiledata' 'Apple' %}" class="list-group-item
+     <a href="{% url 'mobiledata' 'Apple' %}" class="list-group-item
     list-group-item-action">Apple</a>
-     <a href="{% url'mobiledata' 'Oppo' %}" class="list-group-item
+     <a href="{% url 'mobiledata' 'Oppo' %}" class="list-group-item
     list-group-item-action">Oppo</a>   
    </div>
   </div>  

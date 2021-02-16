@@ -45,7 +45,7 @@ def mobile(request , data=None):
         mobiles = Product.objects.filter(category='M')
     elif data == 'Xiomi' or data == 'Samsung' or data == 'Apple' or data == 'Oppo' or data == 'Poco':
         mobiles = Product.objects.filter(category='M').filter(brand=data)
-        return render(request, 'app/mobile.html', {'mobiles': mobiles})
+    return render(request, 'app/mobile.html', {'mobiles': mobiles})
 
 def login(request):
  return render(request, 'app/login.html')
