@@ -17,6 +17,8 @@
     <div class="mb-3">
      <label for="inputPassword1" class="form-label">Password</label>
      <input type="password" class="form-control" id="inputPassword1">
+     <div id="pwdHelp" class="form-text">Use Alpha-Numeric characters.</div>
+     
     </div>
     <div class="mb-3">
      <label for="inputPassword2" class="form-label">Confirm Password</label>
@@ -28,6 +30,7 @@
     <br>
     <div class="text-center text-primary fw-bold"><small>Existing User ? <a href="{% url 'login' %}"
        class="text-danger">Login Now</a> </small></div>
+    <div id="pwdHelp" class="form-text text-center">Your <b>Privacy</b> is our main concern</div>
     {% if form.non_field_errors %}
     {% for error in form.non_field_errors %}
     <p class="alert alert-danger my-3">{{error}}</p>
